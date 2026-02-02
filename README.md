@@ -1,5 +1,7 @@
 ⚡ Smart Electricity Bill Calculator
 
+**[🚀 Live Demo - Try it now!](https://smart-electricity-bill-calculator.onrender.com)**
+
 A professional utility web application that calculates electricity bills with realistic tiered pricing (slabs) and provides energy-saving insights.
 
 ## Features
