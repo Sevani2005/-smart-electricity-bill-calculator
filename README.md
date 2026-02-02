@@ -1,18 +1,24 @@
-⚡ Smart Electricity Bill Calculator
+# ⚡ Smart Electricity Bill Calculator
 
 **[🚀 Live Demo - Try it now!](https://smart-electricity-bill-calculator.onrender.com)**
 
-A professional utility web application that calculates electricity bills with realistic tiered pricing (slabs) and provides energy-saving insights.
+A modern smart electricity bill calculator with pastel UI and basic Node.js backend to compute total amount, tax and monthly savings.
 
-## Features
-- **Realistic Slab Calculation:** Uses a tiered pricing model (0-50, 51-150, 151-300, 300+ units) similar to real-world utility providers.
-- **Smart Feedback System:** Provides dynamic tips based on daily consumption limits.
-- **Cost Breakdown:** Transparently shows Base Cost, GST (18%), and Grand Total.
-- **Premium UI:** Modern glassmorphism design with a violet-themed, responsive layout.
-- **Backend Driven:** Node.js + Express backend ensures logic is centralized and scalable.
+## ✨ Features
+- **Accurate Billing:** Calculates total amount with 18% GST (Tax).
+- **Consumption History:** Beautiful bar charts to track your last 7 entries.
+- **Quick Add:** Buttons for AC, Geyser, and Fans to estimate usage without typing.
+- **Smart Tips:** Personalized advice based on your daily energy limits.
+- **Persistence:** Remembers your history even after you refresh the page.
 
-## Technical Details
-- **Frontend:** Vanilla HTML5, CSS3 (Flexbox, Glassmorphism), JavaScript (Fetch API).
-- **Backend:** Node.js, Express.js, CORS.
-- **Logic:** Implements tiered conditional logic for precise billing.
+## 🛠️ Technical Stack
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla).
+- **Visualization:** Chart.js Library.
+- **Backend:** Node.js with Express.js.
+- **Deployment:** Render.com.
 
+## 🚀 How to Run Locally
+1. Clone the repository.
+2. Run `npm install`.
+3. Run `npm start`.
+4. Open `http://localhost:3000`.
