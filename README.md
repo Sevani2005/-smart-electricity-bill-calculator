@@ -1,9 +1,16 @@
-⚡sSmart Electricity Bill Calculator
+⚡ Smart Electricity Bill Calculator
 
-A simple web app that calculates electricity bill amount based on units consumed.
+A professional utility web application that calculates electricity bills with realistic tiered pricing (slabs) and provides energy-saving insights.
 
-Features
-- Enter units and instantly see total bill.
-- Shows tax amount and a small savings tip.
-- Clean pastel violet UI built with HTML, CSS and JavaScript.
-- Basic Node.js + Express backend for the calculation logic.
+## Features
+- **Realistic Slab Calculation:** Uses a tiered pricing model (0-50, 51-150, 151-300, 300+ units) similar to real-world utility providers.
+- **Smart Feedback System:** Provides dynamic tips based on daily consumption limits.
+- **Cost Breakdown:** Transparently shows Base Cost, GST (18%), and Grand Total.
+- **Premium UI:** Modern glassmorphism design with a violet-themed, responsive layout.
+- **Backend Driven:** Node.js + Express backend ensures logic is centralized and scalable.
+
+## Technical Details
+- **Frontend:** Vanilla HTML5, CSS3 (Flexbox, Glassmorphism), JavaScript (Fetch API).
+- **Backend:** Node.js, Express.js, CORS.
+- **Logic:** Implements tiered conditional logic for precise billing.
+

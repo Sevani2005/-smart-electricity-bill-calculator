@@ -1,15 +1,27 @@
+
 const express = require('express');
 const cors = require('cors');
-const app = express(); app.use(cors()); app.use(express.json());
+const path = require('path');
 
-app.post('/calculate-bill', (req, res) => {
-  const { units } = req.body;
-  const amount = units * 7.2;
-  const tax = amount * 0.18;
-  const total = amount + tax;
-  const tip = units > 200 ? 'Switch to LED bulbs! 💡 Save ₹200/month' : 'Good usage! Keep it up!';
-  
-  res.json({ total: total.toFixed(0), tax: tax.toFixed(0), tip, savings: units > 200 ? 200 : 0 });
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const billRoutes = require('./routes/billRoutes');
+
+// serve all static files from /public
+app.use(express.static(path.join(__dirname, 'public')));
+
+// homepage – send public/index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(3000, () => console.log('⚡ Bill calculator ready'));
+// API routes
+app.use('/bill', billRoutes);
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`⚡ Bill calculator ready at http://localhost:${PORT}`);
+});
